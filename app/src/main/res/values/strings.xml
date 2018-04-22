@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Automated Attendance System</string>
+    <string name="course_button_1">Course 101</string>
+    <string name="course_button_2">Course 102</string>
+    <string name="course_button_3">Course 103</string>
+    <string name="course_button_4">Course 104</string>
+    <string name="dateTime"/>
+    <string name="touchPhoneToReceiver">Touch your phone to the receiver</string>
+    <string name="transferringStudentID">Transferring student id:</string>
+    <string name="successText">Attendance taken for student id:</string>
+    >
+</resources>

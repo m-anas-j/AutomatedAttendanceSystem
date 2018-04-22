@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/default_background"
+    tools:context=".Courses">
+
+    <Button
+        android:text="@string/course_button_1"
+        android:background="@drawable/course_buttons"
+        android:textColor="@android:color/black"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:onClick="onCourseButtonClicked"
+        android:id="@+id/course_button_1"
+        android:layout_below="@+id/dateTime" android:layout_centerHorizontal="true"/>
+    <Button
+        android:text="@string/course_button_2"
+        android:background="@drawable/course_buttons"
+        android:textColor="@android:color/black"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:onClick="onCourseButtonClicked"
+        android:layout_marginTop="32dp" android:id="@+id/course_button_2"
+        android:layout_below="@+id/course_button_1" android:layout_alignStart="@+id/course_button_1"/>
+    <Button
+        android:text="@string/course_button_3"
+        android:background="@drawable/course_buttons"
+        android:textColor="@android:color/black"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:onClick="onCourseButtonClicked"
+        android:layout_marginTop="32dp" android:id="@+id/course_button_3"
+        android:layout_below="@+id/course_button_2" android:layout_alignStart="@+id/course_button_2"/>
+    <Button
+        android:text="@string/course_button_4"
+        android:background="@drawable/course_buttons"
+        android:textColor="@android:color/black"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:onClick="onCourseButtonClicked"
+        android:layout_marginTop="32dp" android:id="@+id/course_button_4"
+        android:layout_below="@+id/course_button_3" android:layout_alignStart="@+id/course_button_3"/>
+    <TextView
+        android:text="@string/dateTime"
+        android:textColor="@android:color/white"
+        android:fontFamily="sans-serif"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:textSize="50sp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:id="@+id/dateTime" android:layout_alignParentTop="true" android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
