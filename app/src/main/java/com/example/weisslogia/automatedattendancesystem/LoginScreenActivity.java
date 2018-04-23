@@ -13,6 +13,8 @@ public class LoginScreenActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login_screen);
     }
 
+    //Method to go to transfer id screen
+
     public void gotoTransferringStudentId(View view) {
         Intent transferringStudId = new Intent(this, TransferringStudentID.class);
         startActivity(transferringStudId);
