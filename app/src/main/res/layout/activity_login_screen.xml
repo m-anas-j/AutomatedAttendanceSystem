@@ -8,7 +8,7 @@
 
     <ImageView
         android:id="@+id/loginicon"
-        android:layout_width="180dp"
+        android:layout_width="200dp"
         android:layout_height="125dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
@@ -20,50 +20,69 @@
 
     <EditText
         android:id="@+id/userIdText"
-        android:layout_width="180dp"
-        android:layout_height="40dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="64dp"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginTop="72dp"
         android:ems="10"
         android:fontFamily="@font/product_sans_regular"
-        android:inputType="text"
         android:hint="@string/user_id_hint"
+        android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/loginicon" />
 
     <EditText
         android:id="@+id/passwordText"
-        android:layout_width="180dp"
-        android:layout_height="40dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="76dp"
         android:layout_marginTop="24dp"
         android:ems="10"
         android:fontFamily="@font/product_sans_regular"
-        android:inputType="textPassword"
         android:hint="@string/password_hint"
+        android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/userIdText" />
 
     <Button
         android:id="@+id/loginButton"
-        android:layout_width="180dp"
-        android:layout_height="40dp"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="48dp"
         android:background="@drawable/ripple"
         android:fontFamily="@font/product_sans_regular"
         android:text="@string/log_in_button"
         android:textSize="18sp"
+        android:onClick="gotoTransferringStudentId"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/passwordText" />
+
+    <ImageView
+        android:id="@+id/userIdIcon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="72dp"
+        app:layout_constraintEnd_toStartOf="@+id/userIdText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginicon"
+        app:srcCompat="@drawable/userid_icon" />
+
+    <ImageView
+        android:id="@+id/passwordIcon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toStartOf="@+id/passwordText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userIdText"
+        app:srcCompat="@drawable/password_icon" />
 
 
 </android.support.constraint.ConstraintLayout>
