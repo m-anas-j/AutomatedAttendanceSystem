@@ -1,19 +1,19 @@
 <ripple xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:color="@color/colorAccent"
+    android:color="#283593"
     tools:targetApi="lollipop">
     <item android:id="@android:id/mask">
         <shape android:shape="rectangle">
             <stroke
                 android:width="2dp"
-                android:color="@color/colorAccent">
+                android:color="#283593">
             </stroke>
             <corners
                 android:bottomRightRadius="20dp"
                 android:bottomLeftRadius="20dp"
                 android:topLeftRadius="20dp"
                 android:topRightRadius="20dp"/>
-            <solid android:color="@color/colorAccent" />
+            <solid android:color="#283593" />
         </shape>
     </item>
     <item
