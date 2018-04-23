@@ -16,26 +16,11 @@
                             <entry key="actionbar">
                               <value>
                                 <PersistentState>
-                                  <option name="children">
-                                    <map>
-                                      <entry key="image">
-                                        <value>
-                                          <PersistentState>
-                                            <option name="values">
-                                              <map>
-                                                <entry key="paddingPercent" value="15" />
-                                              </map>
-                                            </option>
-                                          </PersistentState>
-                                        </value>
-                                      </entry>
-                                    </map>
-                                  </option>
                                   <option name="values">
                                     <map>
                                       <entry key="assetType" value="IMAGE" />
-                                      <entry key="imageAsset" value="C:\Users\Weisslogia\Desktop\Icons\password_icon.png" />
-                                      <entry key="outputName" value="password_icon" />
+                                      <entry key="imageAsset" value="C:\Users\Weisslogia\Desktop\Icons\user_id.png" />
+                                      <entry key="outputName" value="userid_icon" />
                                       <entry key="theme" value="CUSTOM" />
                                       <entry key="themeColor" value="283593" />
                                     </map>
