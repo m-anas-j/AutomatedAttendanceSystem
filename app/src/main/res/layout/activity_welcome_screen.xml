@@ -1,45 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/test"
-    tools:context="com.example.weisslogia.automatedattendancesystem.WelcomeScreen">
+    tools:context=".WelcomeScreenActivity">
+
+
+    <TextView
+        android:id="@+id/StudentSignIn"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="144dp"
+        android:paddingTop="8dp"
+        android:text="@string/student_signin"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:fontFamily="@font/product_sans_regular"
+        android:background="#80DEEA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/StudentImage"
+        android:layout_width="180dp"
+        android:layout_height="125dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/StudentSignIn"
+        app:srcCompat="@drawable/student" />
+
+    <TextView
+        android:id="@+id/notHaveAccountMessage"
+        android:layout_width="180dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/don_t_have_an_account"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="14sp"
+        android:fontFamily="@font/product_sans_regular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/StudentImage" />
 
     <Button
-        android:text="Button"
-        android:onClick="onFacultyButtonClicked"
-        android:background="@drawable/test"
-        android:textColor="@drawable/test"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/facultyButton"
-        android:layout_marginTop="193dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"/>
-    <Button
-        android:text="Button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="onStudentButtonClicked"
-        android:background="@drawable/test"
-        android:layout_below="@+id/facultyButton"
-        android:layout_alignEnd="@+id/facultyButton"
-        android:layout_marginTop="36dp"
-        android:id="@+id/studentButton"/>
+        android:id="@+id/SignUp"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/product_sans_regular"
+        android:text="@string/sign_up"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:background="@drawable/ripple"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notHaveAccountMessage" />
 
-    <EditText
-        android:id="@+id/editText"
-        android:hint="heuheu"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="113dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="BALSAL" />
-
-</RelativeLayout>
+</android.support.constraint.ConstraintLayout>
