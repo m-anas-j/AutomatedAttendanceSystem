@@ -9,16 +9,13 @@
     <string name="transferringStudentID">Transferring student id:</string>
     <string name="successText">Attendance taken for student id:</string>
 
-    <!-- Sadiku -->
+    <!-- Sadiku Chan's part-->
     <string name="student_signin">STUDENT SIGN IN</string>
     <string name="don_t_have_an_account">Don\'t Have an account?</string>
     <string name="sign_up">SIGN UP</string>
     <string name="user_id_hint">Enter your user id</string>
     <string name="password_hint">Password</string>
     <string name="log_in_button">LOG IN</string>
-
-
-    <!-- SadikuChans Part -->
 
 
 </resources>
