@@ -13,13 +13,13 @@
         android:layout_height="40dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="144dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/product_sans_regular"
         android:paddingTop="8dp"
         android:text="@string/student_signin"
         android:textAlignment="center"
+        android:textColor="#283593"
         android:textSize="18sp"
-        android:fontFamily="@font/product_sans_regular"
-        android:background="#80DEEA"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -30,8 +30,7 @@
         android:layout_height="130dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:onClick="gotoLoginScreen"
+        android:layout_marginTop="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/StudentSignIn"
@@ -44,14 +43,14 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
+        android:fontFamily="@font/product_sans_regular"
         android:text="@string/don_t_have_an_account"
         android:textAlignment="center"
         android:textAllCaps="false"
         android:textSize="14sp"
-        android:fontFamily="@font/product_sans_regular"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/StudentImage" />
+        app:layout_constraintTop_toBottomOf="@+id/loginButton" />
 
     <Button
         android:id="@+id/SignUp"
@@ -68,5 +67,22 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/notHaveAccountMessage" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/ripple"
+        android:fontFamily="@font/product_sans_regular"
+        android:text="@string/log_in_button"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:onClick="gotoLoginScreen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/StudentImage" />
 
 </android.support.constraint.ConstraintLayout>
