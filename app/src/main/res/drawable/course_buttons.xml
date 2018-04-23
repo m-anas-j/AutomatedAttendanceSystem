@@ -1,43 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<selector
-        xmlns:android="http://schemas.android.com/apk/res/android">
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
 
+
+    <!-- button when pressed -->
     <item android:state_pressed="true" >
-        <ripple xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:tools="http://schemas.android.com/tools"
-                android:color="#e57373"
-                tools:targetApi="lollipop">
+    <!--
+    <ripple xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:color="#e57373"
+        tools:targetApi="lollipop">  -->
 
-                <shape>
-                    <gradient
-                            android:endColor="#ef5350"
-                            android:startColor="#ef5350"
-                            android:angle="270" />
-                    <stroke
-                            android:width="0dp"
-                            android:color="#37474f" />
-                    <corners
-                            android:radius="20dp" />
-                    <padding
-                            android:left="10dp"
-                            android:top="10dp"
-                            android:right="10dp"
-                            android:bottom="10dp" />
-                </shape>
+            <shape>
+                <gradient
+                        android:endColor="#ff8a80"
+                        android:startColor="#ff8a80"
+                        android:angle="270" />
+                <stroke
+                        android:width="20dp"
+                        android:color="#ff8a80" />
+                <corners
+                        android:radius="20dp" />
+                <padding
+                        android:left="10dp"
+                        android:top="10dp"
+                        android:right="10dp"
+                        android:bottom="10dp" />
 
-        </ripple>
-    </item>
+            </shape>
+   <!-- </ripple> -->
 
+
+</item>
+
+
+<!-- button when pressed and held-->
     <item android:state_focused="true" >
 
         <shape>
             <gradient
-                    android:endColor="#ef5350"
-                    android:startColor="#ef5350"
+                    android:endColor="#ff8a80"
+                    android:startColor="#ff8a80"
                     android:angle="270" />
             <stroke
-                    android:width="0dp"
-                    android:color="#37474f" />
+                    android:width="20dp"
+                    android:color="#ff8a80" />
             <corners
                     android:radius="20dp" />
             <padding
@@ -49,8 +55,10 @@
 
     </item>
 
+
+
     <item>
-        
+
         <shape>
             <gradient
                     android:endColor="#ef5350"
