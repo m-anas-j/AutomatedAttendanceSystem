@@ -2,10 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.weisslogia.automatedattendancesystem">
 
+    <uses-permission android:name="android.permission.NFC" />
 
-    <uses-permission android:name="android.permission.NFC"/>
-
-    <uses-feature android:name="android.hardware.nfc"/>
+    <uses-feature android:name="android.hardware.nfc" />
 
     <application
         android:allowBackup="true"
@@ -24,7 +23,8 @@
         <activity android:name=".Courses" />
         <activity android:name=".SuccessScreen" />
         <activity android:name=".TransferringStudentID" />
-        <activity android:name=".WaitingForStudentID"></activity>
+        <activity android:name=".WaitingForStudentID" />
+        <activity android:name=".LoginScreenActivity"></activity>
     </application>
 
 </manifest>
