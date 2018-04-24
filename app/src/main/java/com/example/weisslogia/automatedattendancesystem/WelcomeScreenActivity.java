@@ -18,4 +18,9 @@ public class WelcomeScreenActivity extends AppCompatActivity {
         Intent loginIntent = new Intent(this, LoginScreenActivity.class);
         startActivity(loginIntent);
     }
+
+    public void gotoSignupScreen(View view) {
+        Intent signUpIntent = new Intent(this, SignupScreenActivity.class);
+        startActivity(signUpIntent);
+    }
 }

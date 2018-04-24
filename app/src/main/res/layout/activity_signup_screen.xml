@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignupScreenActivity">
+
+    <ImageView
+        android:id="@+id/SigupImage"
+        android:layout_width="200dp"
+        android:layout_height="130dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/signupicon" />
+
+    <EditText
+        android:id="@+id/UsernameSignup"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginTop="44dp"
+        android:hint="@string/username_signup"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:fontFamily="@font/product_sans_regular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SigupImage" />
+
+    <EditText
+        android:id="@+id/UserIdSignup"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/user_id_signup"
+        android:ems="10"
+        android:inputType="text"
+        android:fontFamily="@font/product_sans_regular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UsernameSignup" />
+
+    <EditText
+        android:id="@+id/PasswordSignup"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="@string/password_signup"
+        android:fontFamily="@font/product_sans_regular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UserIdSignup" />
+
+    <EditText
+        android:id="@+id/ConfirmPasswordSignup"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="@string/confirm_password_signup"
+        android:fontFamily="@font/product_sans_regular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PasswordSignup" />
+
+    <Button
+        android:id="@+id/LoginSignup"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/log_in_sign_up"
+        android:textSize="18sp"
+        android:background="@drawable/ripple"
+        android:onClick="gotoLoginScreen"
+        android:fontFamily="@font/product_sans_regular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ConfirmPasswordSignup" />
+
+    <ImageView
+        android:id="@+id/usernameIcon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintEnd_toStartOf="@+id/UsernameSignup"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SigupImage"
+        app:srcCompat="@drawable/username_icon" />
+
+    <ImageView
+        android:id="@+id/userIdIconSignup"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/UserIdSignup"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UsernameSignup"
+        app:srcCompat="@drawable/userid_icon" />
+
+    <ImageView
+        android:id="@+id/PaswordIconSignup"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/PasswordSignup"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UserIdSignup"
+        app:srcCompat="@drawable/password_icon" />
+
+    <ImageView
+        android:id="@+id/ConfirmPasswordIconSignup"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/ConfirmPasswordSignup"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PasswordSignup"
+        app:srcCompat="@drawable/confirm_password_icon" />
+</android.support.constraint.ConstraintLayout>
