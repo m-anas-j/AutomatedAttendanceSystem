@@ -13,8 +13,9 @@ public class SignupScreenActivity extends AppCompatActivity {
         setContentView(R.layout.activity_signup_screen);
     }
 
-    public void gotoLoginScreen(View view) {
-        Intent signinIntent = new Intent(this, LoginScreenActivity.class);
+
+    public void gotoTransferringStudentId(View view) {
+        Intent signinIntent = new Intent(this, TransferringStudentID.class);
         startActivity(signinIntent);
     }
 }
