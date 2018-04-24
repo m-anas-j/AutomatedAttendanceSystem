@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrationSuccessfulActivity">
+
+    <TextView
+        android:id="@+id/congratulationsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/product_sans_regular"
+        android:text="@string/congratulationsText"
+        android:textColor="#283593"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/newUserInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/product_sans_regular"
+        android:textSize="18sp"
+        android:textColor="#283593"
+        android:text="@string/newUserInfo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/congratulationsText" />
+
+    <TextView
+        android:id="@+id/newUserName"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:fontFamily="@font/product_sans_regular"
+        android:layout_marginEnd="70dp"
+        android:layout_marginTop="70dp"
+        android:text="@string/newUserName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newUserInfo" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="70dp"
+        app:layout_constraintEnd_toStartOf="@+id/newUserName"
+        app:layout_constraintTop_toBottomOf="@+id/newUserInfo"
+        app:srcCompat="@drawable/username_icon" />
+
+    <TextView
+        android:id="@+id/newUserId"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:fontFamily="@font/product_sans_regular"
+        android:layout_marginEnd="70dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/newUserId"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newUserName" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toStartOf="@+id/newUserId"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:srcCompat="@drawable/userid_icon" />
+
+    <TextView
+        android:id="@+id/newUserPassword"
+        android:hint="Tap to view password"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:fontFamily="@font/product_sans_regular"
+        android:layout_marginEnd="70dp"
+        android:layout_marginTop="40dp"
+        android:onClick="viewPassword"
+        android:text="@string/newUserPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newUserId" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toStartOf="@+id/newUserPassword"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:srcCompat="@drawable/password_icon" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="50dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="60dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/newUserInfo"
+        app:layout_constraintEnd_toStartOf="@+id/congratulationsText"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/congratulations_icon_1" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="50dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="60dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/newUserInfo"
+        app:layout_constraintStart_toEndOf="@+id/congratulationsText"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/congratulations_icon_1" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:background="@drawable/ripple"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="18dp"
+        android:text="@string/loginButton"
+        android:fontFamily="@font/product_sans_regular"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="goToLoginScreen"
+        app:layout_constraintTop_toBottomOf="@+id/newUserPassword" />
+
+</android.support.constraint.ConstraintLayout>

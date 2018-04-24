@@ -25,7 +25,8 @@
         <activity android:name=".TransferringStudentID" />
         <activity android:name=".WaitingForStudentID" />
         <activity android:name=".LoginScreenActivity" />
-        <activity android:name=".SignupScreenActivity"></activity>
+        <activity android:name=".SignupScreenActivity" />
+        <activity android:name=".RegistrationSuccessfulActivity"></activity>
     </application>
 
 </manifest>

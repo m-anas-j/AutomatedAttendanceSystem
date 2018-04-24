@@ -7,7 +7,7 @@
     <string name="dateTime" />
     <string name="touchPhoneToReceiver">Touch your phone to the receiver</string>
     <string name="transferringStudentID">Transferring student id:</string>
-    <string name="successText">Attendance taken for student id:</string>
+    <string name="successText">Attendance taken for student id : </string>
 
     <!-- Sadiku Chan's part again and again-->
     <string name="student_signin">Welcome!</string>
@@ -16,11 +16,20 @@
     <string name="user_id_hint">Enter your user id</string>
     <string name="password_hint">Password</string>
     <string name="log_in_button">LOG IN</string>
-    <string name="log_in_sign_up">SIGN IN</string>
+    <string name="log_in_sign_up">REGISTER</string>
     <string name="username_signup">Enter your username</string>
     <string name="password_signup">Password</string>
     <string name="confirm_password_signup">Confirm Password</string>
     <string name="user_id_signup">Enter your user id</string>
+
+    <!-- End of sadiku chan -->
+
+    <string name="congratulationsText">Congratulations!</string>
+    <string name="newUserInfo">New user created with the following info:</string>
+    <string name="newUserName" />
+    <string name="newUserId" />
+    <string name="newUserPassword" />
+    <string name="loginButton">Log In</string>
 
 
 </resources>

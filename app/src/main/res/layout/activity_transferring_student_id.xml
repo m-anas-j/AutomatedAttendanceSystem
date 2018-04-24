@@ -4,16 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/default_background"
+
     tools:context=".TransferringStudentID">
 
     <TextView
         android:text="@string/transferringStudentID"
         android:layout_width="wrap_content"
         android:layout_height="60dp"
-        android:textSize="25sp"
+        android:textSize="20sp"
         android:gravity="center"
-        android:textColor="@android:color/white"
+        android:textColor="#283593"
+        android:fontFamily="@font/product_sans_regular"
         android:layout_above="@+id/imageView4"
         android:layout_centerHorizontal="true" android:layout_marginBottom="39dp"
         android:id="@+id/transferringStudentId"/>

@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/default_background"
     tools:context=".SuccessScreen">
 
     <ImageView
@@ -15,7 +14,7 @@
         android:text="@string/successText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@android:color/white"
+        android:textColor="#283593"
         android:textSize="18sp"
         android:layout_below="@+id/imageView"
         android:layout_centerHorizontal="true"
