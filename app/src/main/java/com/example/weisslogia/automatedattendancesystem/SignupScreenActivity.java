@@ -14,7 +14,6 @@ public class SignupScreenActivity extends AppCompatActivity {
         setContentView(R.layout.activity_signup_screen);
     }
 
-
     public void goToRegistrationSuccessful(View view)
     {
         Intent i = new Intent(this,RegistrationSuccessfulActivity.class);
