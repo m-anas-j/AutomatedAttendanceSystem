@@ -15,11 +15,6 @@ public class SignupScreenActivity extends AppCompatActivity {
     }
 
 
-    public void gotoTransferringStudentId(View view) {
-        Intent signinIntent = new Intent(this, TransferringStudentID.class);
-        startActivity(signinIntent);
-    }
-
     public void goToRegistrationSuccessful(View view)
     {
         Intent i = new Intent(this,RegistrationSuccessfulActivity.class);
