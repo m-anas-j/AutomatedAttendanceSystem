@@ -20,7 +20,7 @@
         android:id="@+id/transferringStudentId"/>
     <ImageView
         android:layout_width="200dp"
-        android:layout_height="200dp" app:srcCompat="@drawable/nfc_icon_2"
+        android:layout_height="200dp" app:srcCompat="@drawable/nfc_icon_8"
         android:layout_centerVertical="true" android:layout_centerHorizontal="true" android:id="@+id/imageView4"/>
 
 </RelativeLayout>
