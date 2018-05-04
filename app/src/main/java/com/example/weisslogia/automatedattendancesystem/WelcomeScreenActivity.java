@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
 
 public class WelcomeScreenActivity extends AppCompatActivity {
 
@@ -23,4 +24,10 @@ public class WelcomeScreenActivity extends AppCompatActivity {
         Intent signUpIntent = new Intent(this, SignupScreenActivity.class);
         startActivity(signUpIntent);
     }
+
+    public void adminModeClicked(View view)
+    {
+        Toast.makeText(this,"Welcome, Master.",Toast.LENGTH_LONG).show();
+    }
+
 }

@@ -30,6 +30,7 @@
     <string name="newUserId" />
     <string name="newUserPassword" />
     <string name="loginButton">Log In</string>
+    <string name="adminMode"><u>Admin?</u></string>
 
 
 </resources>
