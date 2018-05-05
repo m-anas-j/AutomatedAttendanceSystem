@@ -27,7 +27,8 @@ public class WelcomeScreenActivity extends AppCompatActivity {
 
     public void adminModeClicked(View view)
     {
-        Toast.makeText(this,"Welcome, Master.",Toast.LENGTH_LONG).show();
+        Intent i = new Intent(this,AdminLogin.class);
+        startActivity(i);
     }
 
 }

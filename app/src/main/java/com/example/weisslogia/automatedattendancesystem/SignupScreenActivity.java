@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class SignupScreenActivity extends AppCompatActivity {
 
@@ -24,6 +25,12 @@ public class SignupScreenActivity extends AppCompatActivity {
         String newUsername = UsernameSignup.getText().toString();
         String newUserId = UserIdSignup.getText().toString();
         String newUserPassword = PasswordSignup.getText().toString();
+
+        if(newUserId=="" || newUsername=="" || newUserPassword=="")
+        {
+            Toast.makeText(this,"Credentials can't be empty",Toast.LENGTH_SHORT).show();
+            return;
+        }
 
         i.putExtra("userName",newUsername);
         i.putExtra("userId",newUserId);

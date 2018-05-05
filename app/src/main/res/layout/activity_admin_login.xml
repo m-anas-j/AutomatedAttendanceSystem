@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginScreenActivity">
+    tools:context=".AdminLogin">
 
     <ImageView
         android:id="@+id/adminIcon"
@@ -16,7 +16,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/loginicon" />
+        app:srcCompat="@drawable/admin_icon_1" />
 
     <EditText
         android:id="@+id/adminIdText"
@@ -26,7 +26,7 @@
         android:layout_marginTop="72dp"
         android:ems="10"
         android:fontFamily="@font/product_sans_regular"
-        android:hint="@string/user_id_hint"
+        android:hint="@string/adminIdHint"
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/adminIcon" />
@@ -39,7 +39,7 @@
         android:layout_marginTop="24dp"
         android:ems="10"
         android:fontFamily="@font/product_sans_regular"
-        android:hint="@string/password_hint"
+        android:hint="@string/adminPasswordHint"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/adminIdText" />
@@ -53,9 +53,9 @@
         android:layout_marginTop="48dp"
         android:background="@drawable/ripple"
         android:fontFamily="@font/product_sans_regular"
+        android:onClick="goToViewStudentDatabase"
         android:text="@string/log_in_button"
         android:textSize="18sp"
-        android:onClick="gotoTransferringStudentId"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/adminPasswordText" />

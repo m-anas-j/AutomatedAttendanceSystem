@@ -31,6 +31,9 @@
     <string name="newUserPassword" />
     <string name="loginButton">Log In</string>
     <string name="adminMode"><u>Admin?</u></string>
+    <string name="title_activity_admin_login">Sign in</string>
+    <string name="adminIdHint">Your username, Master</string>
+    <string name="adminPasswordHint">Your password, Master</string>
 
 
 </resources>

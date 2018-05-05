@@ -52,6 +52,11 @@ public class StudentDBHandler extends SQLiteOpenHelper{
 
         SQLiteDatabase db = getWritableDatabase();
         db.insert(TABLE_STUDENT,null,newStudentValues);
+
+        /*//sort the table every time a new entry is added
+        db.execSQL("CREATE TABLE ORDERED_TABLE AS SELECT * FROM " + TABLE_STUDENT + " ORDER BY STUDENT_ID ASC");
+        db.execSQL("DROP TABLE " + TABLE_STUDENT);
+        db.execSQL("ALTER TABLE ORDERED_TABLE RENAME TO " + TABLE_STUDENT);*/
     }
 
     public Student getNewlyCreatedStudentInfo(String newStudentId)
@@ -61,7 +66,6 @@ public class StudentDBHandler extends SQLiteOpenHelper{
         SQLiteDatabase db = getWritableDatabase();
 
         String idQuery = "SELECT " + COLUMN_1_ID + " FROM " + TABLE_STUDENT + " WHERE " + COLUMN_1_ID + " IS " + newStudentId;
-        //String idQuery = "SELECT " + COLUMN_1_ID + " FROM " + TABLE_STUDENT;
         String nameQuery = "SELECT " + COLUMN_2_NAME + " FROM " + TABLE_STUDENT + " WHERE " + COLUMN_1_ID + " IS " + newStudentId;
 
         Cursor recordSet = db.rawQuery(idQuery, null);
@@ -80,4 +84,12 @@ public class StudentDBHandler extends SQLiteOpenHelper{
         return studentInfo;
     }
 
+    public Cursor viewAllStudents()
+    {
+        SQLiteDatabase db = getWritableDatabase();
+        String query = "SELECT * FROM " + TABLE_STUDENT;
+        Cursor ret = db.rawQuery(query, null);
+        ret.moveToFirst();
+        return ret;
+    }
 }
