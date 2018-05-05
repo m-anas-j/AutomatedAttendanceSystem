@@ -53,10 +53,10 @@ public class StudentDBHandler extends SQLiteOpenHelper{
         SQLiteDatabase db = getWritableDatabase();
         db.insert(TABLE_STUDENT,null,newStudentValues);
 
-        /*//sort the table every time a new entry is added
+        //sort the table every time a new entry is added
         db.execSQL("CREATE TABLE ORDERED_TABLE AS SELECT * FROM " + TABLE_STUDENT + " ORDER BY STUDENT_ID ASC");
         db.execSQL("DROP TABLE " + TABLE_STUDENT);
-        db.execSQL("ALTER TABLE ORDERED_TABLE RENAME TO " + TABLE_STUDENT);*/
+        db.execSQL("ALTER TABLE ORDERED_TABLE RENAME TO " + TABLE_STUDENT);
     }
 
     public Student getNewlyCreatedStudentInfo(String newStudentId)
