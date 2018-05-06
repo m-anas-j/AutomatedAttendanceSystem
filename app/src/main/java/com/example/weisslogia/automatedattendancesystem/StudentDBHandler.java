@@ -17,9 +17,11 @@ public class StudentDBHandler extends SQLiteOpenHelper{
     private static final String COLUMN_3_PASSWORD = "student_password";
 
 
+
     public StudentDBHandler(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
         super(context, DATABASE_NAME, factory, DATABASE_VERSION);
     }
+
 
     @Override
     public void onCreate(SQLiteDatabase db) {
@@ -91,5 +93,24 @@ public class StudentDBHandler extends SQLiteOpenHelper{
         Cursor ret = db.rawQuery(query, null);
         ret.moveToFirst();
         return ret;
+    }
+
+    public String searchPass(String userIdStr) {
+        SQLiteDatabase db = getReadableDatabase();
+        String query = "SELECT student_id,student_password FROM " + TABLE_STUDENT;
+        Cursor cursor = db.rawQuery(query, null);
+        String userId, pass;
+        pass = "NOT FOUND";
+        if(cursor.moveToFirst()){
+            do {
+                userId = cursor.getString(0);
+                pass = cursor.getString(1);
+                if(userId.equals(userIdStr)){
+                    pass = cursor.getString(1);
+                    break;
+                }
+            }while (cursor.moveToNext());
+        }
+        return pass;
     }
 }
