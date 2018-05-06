@@ -27,7 +27,8 @@ public class LoginScreenActivity extends AppCompatActivity {
         EditText passwordEditText = (EditText) findViewById(R.id.userPasswordText);
         String passwordStr = passwordEditText.getText().toString();
 
-        String password = studentDBHandler.searchPass(userIdStr);
+        String password = studentDBHandler.searchPassword(userIdStr);
+
         if(passwordStr.equals(password)) {
             Intent transferringStudId = new Intent(this, TransferringStudentID.class);
             startActivity(transferringStudId);

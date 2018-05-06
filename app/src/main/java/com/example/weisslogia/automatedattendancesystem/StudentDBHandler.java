@@ -95,22 +95,22 @@ public class StudentDBHandler extends SQLiteOpenHelper{
         return ret;
     }
 
-    public String searchPass(String userIdStr) {
+    public String searchPassword(String userIdStr) {
         SQLiteDatabase db = getReadableDatabase();
         String query = "SELECT student_id,student_password FROM " + TABLE_STUDENT;
         Cursor cursor = db.rawQuery(query, null);
-        String userId, pass;
-        pass = "NOT FOUND";
+        String userId, password;
+        password = "NOT FOUND";
         if(cursor.moveToFirst()){
             do {
                 userId = cursor.getString(0);
-                pass = cursor.getString(1);
+                password = cursor.getString(1);
                 if(userId.equals(userIdStr)){
-                    pass = cursor.getString(1);
+                    password = cursor.getString(1);
                     break;
                 }
             }while (cursor.moveToNext());
         }
-        return pass;
+        return password;
     }
 }
